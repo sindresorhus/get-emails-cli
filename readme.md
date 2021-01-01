@@ -1,4 +1,4 @@
-# get-emails-cli [![Build Status](https://travis-ci.org/sindresorhus/get-emails-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/get-emails-cli)
+# get-emails-cli
 
 > Get all emails in a text file or stdin
 
