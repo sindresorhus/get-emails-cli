@@ -1,6 +1,6 @@
 {
 	"name": "get-emails-cli",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "Get all emails in a text file or stdin",
 	"license": "MIT",
 	"repository": "sindresorhus/get-emails-cli",
