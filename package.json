@@ -1,47 +1,49 @@
 {
-  "name": "get-emails-cli",
-  "version": "1.0.0",
-  "description": "Get all emails in a text file or stdin",
-  "license": "MIT",
-  "repository": "sindresorhus/get-emails-cli",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "bin": {
-    "get-emails": "cli.js"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "cli.js"
-  ],
-  "keywords": [
-    "cli-app",
-    "cli",
-    "get",
-    "extract",
-    "find",
-    "scrape",
-    "text",
-    "string",
-    "email",
-    "address",
-    "emails"
-  ],
-  "dependencies": {
-    "get-emails": "^2.0.0",
-    "get-stdin": "^5.0.1",
-    "meow": "^3.7.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "execa": "^0.6.0",
-    "xo": "*"
-  }
+	"name": "get-emails-cli",
+	"version": "1.0.0",
+	"description": "Get all emails in a text file or stdin",
+	"license": "MIT",
+	"repository": "sindresorhus/get-emails-cli",
+	"funding": "https://github.com/sponsors/sindresorhus",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "https://sindresorhus.com"
+	},
+	"type": "module",
+	"bin": {
+		"get-emails": "./cli.js"
+	},
+	"engines": {
+		"node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"cli.js"
+	],
+	"keywords": [
+		"cli-app",
+		"cli",
+		"get",
+		"extract",
+		"find",
+		"scrape",
+		"text",
+		"string",
+		"email",
+		"address",
+		"emails"
+	],
+	"dependencies": {
+		"get-emails": "^4.0.0",
+		"get-stdin": "^9.0.0",
+		"meow": "^10.1.1"
+	},
+	"devDependencies": {
+		"ava": "^3.15.0",
+		"execa": "^5.1.1",
+		"xo": "^0.44.0"
+	}
 }

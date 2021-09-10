@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-'use strict';
-const fs = require('fs');
-const meow = require('meow');
-const stdin = require('get-stdin');
-const getEmails = require('get-emails');
+import fs from 'node:fs';
+import process from 'node:process';
+import meow from 'meow';
+import getStdin from 'get-stdin';
+import getEmails from 'get-emails';
 
 const cli = meow(`
 	Usage
@@ -14,12 +14,14 @@ const cli = meow(`
 	  $ get-emails file.txt
 	  sindresorhus@gmail.com
 	  unicorn@rainbow.com
-`);
+`, {
+	importMeta: import.meta,
+});
 
 const input = cli.input[0];
 
 function init(data) {
-	console.log(Array.from(getEmails(data)).join('\n'));
+	console.log([...getEmails(data)].join('\n'));
 }
 
 if (!input && process.stdin.isTTY) {
@@ -30,5 +32,7 @@ if (!input && process.stdin.isTTY) {
 if (input) {
 	init(fs.readFileSync(input, 'utf8'));
 } else {
-	stdin().then(init);
+	(async () => {
+		init(await getStdin());
+	})();
 }

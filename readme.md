@@ -2,13 +2,11 @@
 
 > Get all emails in a text file or stdin
 
-
 ## Install
 
 ```
 $ npm install --global get-emails-cli
 ```
-
 
 ## Usage
 
@@ -25,12 +23,6 @@ $ get-emails --help
     unicorn@rainbow.com
 ```
 
-
 ## Related
 
 - [get-emails](https://github.com/sindresorhus/get-emails) - API for this module
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
