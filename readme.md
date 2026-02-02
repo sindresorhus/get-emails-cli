@@ -4,8 +4,8 @@
 
 ## Install
 
-```
-$ npm install --global get-emails-cli
+```sh
+npm install --global get-emails-cli
 ```
 
 ## Usage
@@ -25,4 +25,4 @@ $ get-emails --help
 
 ## Related
 
-- [get-emails](https://github.com/sindresorhus/get-emails) - API for this module
+- [get-emails](https://github.com/sindresorhus/get-emails) - API for this package

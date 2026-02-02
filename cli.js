@@ -20,19 +20,17 @@ const cli = meow(`
 
 const input = cli.input[0];
 
-function init(data) {
-	console.log([...getEmails(data)].join('\n'));
-}
-
 if (!input && process.stdin.isTTY) {
 	console.error('Specify an input file');
 	process.exit(1);
 }
 
+function init(data) {
+	console.log([...getEmails(data)].join('\n'));
+}
+
 if (input) {
 	init(fs.readFileSync(input, 'utf8'));
 } else {
-	(async () => {
-		init(await getStdin());
-	})();
+	init(await getStdin());
 }

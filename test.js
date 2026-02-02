@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import test from 'ava';
-import execa from 'execa';
+import {execa} from 'execa';
 
 const expected = [
 	'sindresorhus@gmail.com',
